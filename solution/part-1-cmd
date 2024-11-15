@@ -1,0 +1,5 @@
+
+###Create the `part-1-cmd` File
+Save the final `docker run` command in `part-1-cmd`:
+```bash
+echo 'docker run -d --name csvserver -p 9393:9300 -e CSVSERVER_BORDER=Orange -v "$(pwd)/inputFile:/csvserver/inputdata" infracloudio/csvserver:latest' > part-1-cmd
